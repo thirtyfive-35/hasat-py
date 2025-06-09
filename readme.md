@@ -1,4 +1,4 @@
-# PMPFinder - Subdomain and GitHub Dork Finder
+# Hasat.py - Subdomain and GitHub Dork Finder
 
 This project is a Python script designed to discover subdomains of a given domain and find its GitHub dorks. The results will be saved in a file.
 
@@ -12,7 +12,7 @@ To install the required dependencies for the project, follow these steps:
 2. Install the required Python dependencies using the `requirements.txt` file by running the following command:
 
    ```bash
-   cd pmp-finder
+   cd hasat-py
    ```
    ```bash
    pip install -r requirements.txt
@@ -57,25 +57,25 @@ Here are the available options for using the script:
 1. **Run with subdomain enumeration tools (subfinder, assetfinder, amass) and bruteforce:**
 
    ```bash
-   python pmpfinder.py teslamotors.com --type subfinder,assetfinder,amass --bruteforce -w resolvers/output_part_1.txt --rate-limit 100 --rate-limit-trusted 500 --onefile
+   python hasat.py teslamotors.com --type subfinder,assetfinder,amass --bruteforce -w resolvers/output_part_1.txt --rate-limit 100 --rate-limit-trusted 500 --onefile
    ```
 
 2. **Run with subdomain enumeration tools (subfinder, assetfinder) without bruteforce:**
 
    ```bash
-   python pmpfinder.py teslamotors.com --type subfinder,assetfinder
+   python hasat.py teslamotors.com --type subfinder,assetfinder
    ```
 
 3. **Run with subdomain enumeration tools (subfinder, amass) and bruteforce:**
 
    ```bash
-   python pmpfinder.py teslamotors.com --type subfinder,amass --bruteforce -w resolvers/output_part_1.txt --rate-limit 100 --rate-limit-trusted 500
+   python hasat.py teslamotors.com --type subfinder,amass --bruteforce -w resolvers/output_part_1.txt --rate-limit 100 --rate-limit-trusted 500
    ```
 
 4. **Run with bruteforce only (without any other tools):**
 
    ```bash
-   python pmpfinder.py teslamotors.com --bruteforce -w resolvers/output_part_1.txt --rate-limit 100 --rate-limit-trusted 500
+   python hasat.py teslamotors.com --bruteforce -w resolvers/output_part_1.txt --rate-limit 100 --rate-limit-trusted 500
    ```
 
 ## Output
