@@ -54,28 +54,35 @@ Here are the available options for using the script:
 
 ### Examples
 
+
+1. **All mode (subfinder, assetfinder, amass, virustotal) and bruteforce:**
+
+   ```bash
+   python hasat.py example.com --type subfinder,assetfinder,amass,virustotal,gitdork --bruteforce -w resolvers/min-sub.txt --rate-limit 100 --rate-limit-trusted 500 --onefile
+   ```
+
 1. **Run with subdomain enumeration tools (subfinder, assetfinder, amass) and bruteforce:**
 
    ```bash
-   python hasat.py teslamotors.com --type subfinder,assetfinder,amass --bruteforce -w resolvers/output_part_1.txt --rate-limit 100 --rate-limit-trusted 500 --onefile
+   python hasat.py example.com --type subfinder,assetfinder,amass --bruteforce -w resolvers/min-sub.txt --rate-limit 100 --rate-limit-trusted 500 --onefile
    ```
 
 2. **Run with subdomain enumeration tools (subfinder, assetfinder) without bruteforce:**
 
    ```bash
-   python hasat.py teslamotors.com --type subfinder,assetfinder
+   python hasat.py example.com --type subfinder,assetfinder
    ```
 
 3. **Run with subdomain enumeration tools (subfinder, amass) and bruteforce:**
 
    ```bash
-   python hasat.py teslamotors.com --type subfinder,amass --bruteforce -w resolvers/output_part_1.txt --rate-limit 100 --rate-limit-trusted 500
+   python hasat.py example.com --type subfinder,amass --bruteforce -w resolvers/min-sub.txt --rate-limit 100 --rate-limit-trusted 500
    ```
 
 4. **Run with bruteforce only (without any other tools):**
 
    ```bash
-   python hasat.py teslamotors.com --bruteforce -w resolvers/output_part_1.txt --rate-limit 100 --rate-limit-trusted 500
+   python hasat.py example.com --bruteforce -w resolvers/min-sub.txt --rate-limit 100 --rate-limit-trusted 500
    ```
 
 ## Output
